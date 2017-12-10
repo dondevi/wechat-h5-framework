@@ -1,0 +1,261 @@
+/**
+ * ============================================================================
+ *  Wechat H5 Framework documentation markdown style
+ * ============================================================================
+ *
+ * @author dondevi
+ * @create 2015
+ *
+ * @update 2017-04-12 dondevi
+ * @update 2017-09-20 dondevi
+ *
+ */
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Default
+ * -----------------------------------------------------------------------------
+ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+  background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.toc:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+html, body {
+  height: auto;
+  -webkit-user-select: auto;
+          user-select: auto;
+}
+body {
+  position: static;
+  overflow: auto;
+  max-width: none;
+  width: auto;
+  margin-top: 0;
+  background: none;
+  border: none;
+}
+summary {
+  cursor: pointer;
+}
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Markdown style overwrite
+ * -----------------------------------------------------------------------------
+ */
+.markdown-body {
+  max-width: 55em;
+  margin: auto;
+}
+.markdown-body h1 {
+  padding-bottom: 1em;
+}
+.toc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  overflow: auto;
+  margin: 0;
+  padding: 10px 10px 5px;
+  padding-left: 10px;
+  background-color: #333;
+  color: #fff;
+}
+.toc ul {
+  padding-left: 0;
+}
+.toc li {
+  list-style: none;
+}
+.toc li a {
+  display: block;
+  /*margin: 2px 0 2px -8px;*/
+  padding: 4px 0 4px 8px;
+  border-radius: 3px;
+  color: #ddd;
+}
+.toc li a:hover {
+  background-color: rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+.toc li a.active {
+  background-color: #000;
+  color: #fff;
+}
+.toc li li a { padding-left: 15px; color: #ddd }
+.toc li li li a { padding-left: 30px; color: #bbb; }
+.toc li li li li a { padding-left: 45px; color: #999; }
+.toc a[href="#component"] + ul li li a { font-size: 15px; }
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Cumstom
+ * -----------------------------------------------------------------------------
+ */
+.toc {
+  visibility: hidden;
+}
+.btn-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 0;
+  padding: 6px 9px 8px 5px;
+  font-size: 12px;
+  background-color: rgba(107, 193, 0, 0.8);
+  border: none;
+  border-radius: 0;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.show-toc {
+  padding-left: 252px;
+}
+.show-toc .btn-menu {
+  left: 252px;
+}
+.show-toc .toc {
+  visibility: visible;
+}
+@media screen and (max-width: 45em) {
+  .show-toc {
+    padding-left: 0;
+  }
+  .toc,
+  .btn-menu {
+    visibility: hidden !important;
+  }
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: arrount-content;
+  padding: 20px 30px;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.icon-list > span {
+  display: inline-block;
+  width: 24%;
+  height: 30px;
+}
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Fixed Conflict
+ * -----------------------------------------------------------------------------
+ */
+.markdown-body .table {
+  margin-bottom: 0;
+}
+.markdown-body .panel-title {
+  margin: 0;
+}
+.markdown-body > .loading {
+  z-index: 10;
+}
+.markdown-body .progress {
+  display: block;
+  width: initial;
+  margin: 0 30px 0 0;
+  height: 4px;
+  border-radius: initial;
+  background-color: #f5f5f5;
+  box-shadow: none;
+}
+.markdown-body .progress-bar {
+  float: left;
+  width: 1%;
+  height: 100%;
+  border-radius: initial;
+  background-color: #5cb85c;
+  background-image: none;
+  box-shadow: none;
+}
+.markdown-body .stage,
+.markdown-body .stagebar {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Demo patch
+ * -----------------------------------------------------------------------------
+ */
+.demo {
+  position: relative;
+  width: 320px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+.modal .demo {
+  height: 568px;
+  margin: 0;
+  padding: 0;
+}
+.modal-dialog {
+  max-width: 320px;
+}
+.modal-dialog p {
+  margin: 0 !important;
+}
+.modal-dialog h4 {
+  margin: 0;
+  font-size: inherit;
+  line-height: normal;
+}
+
+.tab-nav,
+.carousel ol {
+  margin: 0;
+  padding: 0 !important;
+}
+.navbar > h2 {
+  border: none;
+  line-height: inherit;
+}
+
+.list-item {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.stage {
+  padding: 0!important;
+}
+#modal-demo-form-data .modal-dialog {
+  margin-left: -50%;
+}
+
