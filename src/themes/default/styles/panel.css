@@ -1,0 +1,92 @@
+/**
+ * =============================================================================
+ *  Panel 面板
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.panel {
+  margin: 10px auto;
+  /*padding: 0.1px;*/
+  background-color: #fff;
+  outline: 1px solid #eaeaea;
+}
+/*@media
+only screen and (-webkit-device-pixel-ratio: 2),
+only screen and (device-pixel-ratio: 2) {
+  .panel {
+    outline: 0.5px solid #eaeaea;
+  }
+}*/
+.panel-fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  overflow: hidden;
+  max-width: 480px;
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 5px;
+  background-color: #fff;
+  border-top: 2px solid #ff5654;
+  outline: none !important;
+  color: #666;
+}
+  .panel-fixed > p {
+    padding: 0 5px;
+    line-height: 22px;
+  }
+  .panel-fixed > p + .btn {
+    margin-top: 8px;
+  }
+  .panel-fixed .price {
+    font-size: 22px;
+  }
+  .panel-fixed .btn {
+    margin: auto;
+  }
+.panel.padding {
+  padding: 10px;
+}
+.panel.no-top {
+  margin-top: 0;
+}
+.panel.no-bottom {
+  margin-bottom: 0;
+}
+  .panel-heading {
+    margin: 0;
+    padding: 8px 10px;
+    border-bottom: 1px dotted #aaa;
+    color: #323232;
+  }
+  .panel-body {
+    padding: 15px;
+  }
+.panel-title {
+  display: block;
+  margin: 0;
+  padding: 15px;
+  color: #555;
+  font-size: 1rem;
+}
+small.panel-title {
+  font-size: 0.8rem;
+}
+  .panel-title + .panel {
+    margin-top: 0;
+  }
+  .panel + .panel-title {
+    margin-top: -10px;
+  }
+.panel .panel-title {
+  border-bottom: 1px solid #eaeaea;
+}
+.panel-tips {
+  margin: 0;
+  padding: 0 15px;
+  color: #aaa;
+  font-size: 0.8rem;
+  font-weight: normal;
+}

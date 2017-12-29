@@ -1,0 +1,68 @@
+/**
+ * =============================================================================
+ *  数量选择
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ * @update 2017-09-20 dondevi
+ *   1.Rename: "Amount" to "Number"
+ *
+ */
+
+.number-box {
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+  .number-box input,
+  .number-box button {
+    display: inline-block;
+    width: 36px;
+    height: 33px;
+    margin: 0 -1px;
+    letter-spacing: 0;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+.number-box input {
+  border: none;
+  border-bottom: 2px solid #c9c9c9;
+  border-radius: 5px;
+  outline: none;
+  color: #333;
+  text-align: center;
+  pointer-events: none;
+}
+.number-box:active input {
+  color: #888;
+}
+
+.number-box button,
+.number-box button:hover {
+  padding: 0;
+  background-color: #266acf;
+  border-color: #266acf;
+  color: #fff;
+  font-size: 20px;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+.number-box button[disabled] {
+  background-color: #fff;
+  border: 1px solid #888;
+  color: #888;
+}
+

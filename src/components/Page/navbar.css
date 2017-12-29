@@ -1,0 +1,72 @@
+/**
+ * @overview CSS 工具库
+ *
+ * =============================================================================
+ *  Navbar 导航栏
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.navbar {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  max-width: 480px;
+  width: 100%;
+  height: 43px;
+  background-color: #1c2836;
+  border-bottom: 1px solid #eaeaea;
+  color: #fff;
+  line-height: 43px;
+}
+.no-navbar .navbar {
+  display: none;
+}
+/*@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  .navbar {
+    border-bottom-width: 0.5px !important;
+  }
+}*/
+  .navbar-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 0 12px;
+    background: none;
+    border: none;
+    color: #fff;
+    text-align: center;
+  }
+    .navbar-btn:visited { color: #fff; }
+    .navbar-btn:active  { color: #bbb; }
+  .navbar > h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .navbar-back {
+    width: 60px;
+    height: 43px;
+    line-height: 43px;
+  }
+    .navbar-back:before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      vertical-align: middle;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    .navbar-back:active:before {
+      border-color: #c9c9c9;
+    }
+  .navbar-btn-left  { left:  0; }
+  .navbar-btn-right { right: 0; }

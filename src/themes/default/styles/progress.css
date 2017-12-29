@@ -1,0 +1,36 @@
+/**
+ * =============================================================================
+ *  Progress 进度条
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.progress {
+  position: relative;
+  height: 4px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  overflow: visible;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+  .progress-bar {
+    float: left;
+    width: 1%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #5cb85c;
+    -webkit-transition: width .5s ease-out;
+            transition: width .5s ease-out;
+  }
+  .progress-bar:after {
+    content: attr(title);
+    position: absolute;
+    top: -8px;
+    right: -30px;
+    color: #5cb85c;
+  }

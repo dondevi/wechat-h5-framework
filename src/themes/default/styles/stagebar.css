@@ -1,0 +1,73 @@
+/**
+ * @overview CSS 工具库
+ *
+ * =============================================================================
+ *  Stagebar 进度栏
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ * @update 2016-07-14 dondevi
+ *
+ */
+.stagebar {
+  position: relative;
+  z-index: 100;
+  height: 25px;
+  background-color: #1f272a;
+  border-top: 1px solid #404040;
+  /*border-bottom: 1px solid #222;*/
+  border-bottom: 1px solid #404040;
+  overflow: hidden;
+  list-style: none;
+}
+.page .stagebar:not(.hide) + article {
+  margin-top: -25px;
+  padding-top: 25px;
+}
+.page .stagebar:not(.hide) + .navbar + article {
+  margin-top: -68px;
+  padding-top: 68px;
+}
+  .stagebar > li {
+    position: relative;
+    float: left;
+    width: 25%;
+    color: #666;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    line-height: 24px;
+    text-align: center;
+  }
+  .stagebar > li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #444;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: 1px -1px 1px #222;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .stagebar > li:last-child:after {
+    display: none;
+  }
+  .stagebar > .done {
+    color: #ccc;
+    background-color: rgba(0,0,0,.1);
+  }
+  .stagebar > .active {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+    background-color: rgba(0,0,0,.1);
+  }
+  .stagebar > .active:after {
+    border-color: #555;
+  }

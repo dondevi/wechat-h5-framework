@@ -1,0 +1,41 @@
+/**
+ * =============================================================================
+ *  Table 表格
+ * =============================================================================
+ *
+ * @author dondevi
+ * @create 2016-01-28
+ *
+ */
+.table-wrap {
+  padding-bottom: 1px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-wrap .table {
+  width: auto;
+}
+.table {
+  width: 100%;
+  font-size: 0.9rem;
+}
+  .table thead tr {
+    background-color: #0084d1;
+    color: #fff;
+  }
+  .table td {
+    padding: 8px 10px;
+    border: 1px solid #eee;
+  }
+  .table td label {
+    color: #888;
+  }
+  .table thead th {
+    padding: 8px 10px;
+    text-align: center;
+    border-right: 1px solid #3d9ed7;
+    white-space: nowrap;
+  }
+  .table thead td:last-child {
+    border-right: none;
+  }

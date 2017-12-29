@@ -1,0 +1,39 @@
+/**
+ * =============================================================================
+ *  Tabs 标签页
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.tab-nav {
+  position: relative;
+  z-index: 10;
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #4384d5;
+  list-style: none;
+}
+  .tab-nav > li {
+    display: table-cell;
+    width: 1%;
+    padding: 10px 0;
+    color: #5f6b81;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+  }
+    .tab-nav > .active {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #4384d5;
+      color: #4384d5;
+    }
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}

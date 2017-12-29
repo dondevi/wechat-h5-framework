@@ -1,0 +1,35 @@
+/**
+ * 标记
+ * @author dondevi
+ * @create 2016-07-26
+ */
+
+.badge {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  font-size: 12px;
+  color: #aaa;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.badge-xs { padding: 2px 4px; font-size: 8px; }
+.badge-sm { padding: 2px 4px; font-size: 10px; }
+
+.badge-muted,
+.badge-success,
+.badge-danger  { color: #fff; border: none; }
+.badge-muted   { background-color: #b4c0ce; }
+.badge-success { background-color: #8fc31f; }
+.badge-danger  { background-color: #ff5654; }
+
+.badge-corner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 6px 7px;
+  border-radius: 0;
+  border-top-left-radius: 15px;
+}

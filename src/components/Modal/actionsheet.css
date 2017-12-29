@@ -1,0 +1,46 @@
+/**
+ * =============================================================================
+ *  Action Sheet 上拉框
+ * =============================================================================
+ * @require modal.css
+ *
+ * @author dondevi
+ * @create 2016-05-09
+ *
+ */
+.actionsheet {
+  overflow: hidden;
+}
+.actionsheet.modal.fade .modal-dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  white-space: normal;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-transition: -webkit-transform 0.176s ease-out;
+          transition:         transform 0.176s ease-out;
+}
+.actionsheet.modal.in .modal-dialog {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.actionsheet.modal .modal-content {
+  /*background-color: #efeff4;*/
+  border-radius: 0;
+}
+  .actionsheet.modal .list-item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .actionsheet.modal .list-item.option.active:after {
+    right: 5px;
+  }
+  .actionsheet.modal .btn {
+    width: 100%;
+    margin: 5px 0 0;
+    border-radius: 0;
+    text-align: center;
+  }

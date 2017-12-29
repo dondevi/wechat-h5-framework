@@ -1,0 +1,167 @@
+/**
+ * =============================================================================
+ *  Button 按钮
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ * @update 2017-09-20 dondevi
+ *   1.Update: code style
+ *
+ */
+
+.btn {
+  /*position: relative;*/
+  display: inline-block;
+  margin: 8px auto;
+  padding: 6px 12px;
+  background-color: #fff;
+  /* ---fixed Adroid border-radius bug */
+  background-clip: padding-box;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset,
+              0 -3px rgba(0,0,0,.18) inset;
+  /* --- */
+  /*border: 1px solid rgba(0,0,0,.1);*/
+  /*box-shadow: 0 0 rgba(0,0,0,.18) inset;*/
+  border-radius: 3px;
+  /*color: #4384d5;*/
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+          appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Shadow
+ * -----------------------------------------------------------------------------
+ */
+.btn:before,
+.btn:after {
+  content: "";
+  display: block;
+  height: 3px;
+}
+.btn:before,
+.btn:active:after {
+  height: 0;
+}
+.btn:visited {
+  /*color: #4384d5;*/
+  color: #666;
+}
+.btn:active {
+  /*border-top-width: 3px;*/
+  /*border-bottom-width: 1px;*/
+  border-top: 3px solid transparent;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+}
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Sizes
+ * -----------------------------------------------------------------------------
+ */
+.btn-sm { padding: 4px 8px;  font-size: 12px; border-radius: 3px; }
+.btn-md { padding: 6px 12px; font-size: 16px; border-radius: 5px; }
+.btn-lg { padding: 8px 16px; font-size: 18px; border-radius: 8px; }
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Colors
+ * -----------------------------------------------------------------------------
+ */
+.btn-default:active,
+.btn-primary:active,
+.btn-danger:active,
+.btn-success:active,
+.btn-default:visited,
+.btn-primary:visited,
+.btn-danger:visited,
+.btn-success:visited,
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-danger  { color: #fff; }
+.btn-default { background-color: #4384d5; }
+.btn-primary { background-color: #ff5654; }
+.btn-success { background-color: #8fc31f; }
+.btn-danger  { background-color: #ff5654; }
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ *  Shapes
+ * -----------------------------------------------------------------------------
+ */
+.btn-block {
+  display: block;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-flat {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+}
+.btn-flat:active {
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset,
+              0 3px rgba(0,0,0,.06) inset;
+}
+  .btn-flat:active:before { height: 2px; }
+  .btn-flat:active:after  { height: 1px; }
+.btn-pill {
+  border-radius: 50px;
+}
+.btn-corner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  /*border-bottom: none;*/
+  border-radius: 0;
+  border-top-left-radius: 30%;
+}
+/* 圆形按钮 */
+.btn-round {
+  display: inline-block;
+  padding: 0;
+  border-radius: 50% !important;
+  text-align: center;
+}
+  .btn-round-inner {
+    display: block;
+    padding: 50% 14px;
+    height: 0;
+    pointer-events: none;
+  }
+    .btn-round-content {
+      display: block;
+      pointer-events: none;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }

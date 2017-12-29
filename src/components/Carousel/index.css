@@ -1,0 +1,97 @@
+/**
+ * =============================================================================
+ *  Carousel 轮播
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.carousel {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: move;
+}
+  .carousel-inner,
+  .carousel-indicators {
+    padding: 0;
+    list-style: none;
+  }
+  .carousel-inner {
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: -0.31em;
+    -webkit-transition: -webkit-transform 0.334s ease-out;
+            transition:         transform 0.334s ease-out;
+  }
+  .moving .carousel-inner {
+    will-change: transform;
+    -webkit-transition: none;
+            transition: none;
+  }
+    .carousel-inner .item {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .carousel-inner .item > * {
+      letter-spacing: 0;
+    }
+    .carousel-inner .item:before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      letter-spacing: 0;
+      vertical-align: middle;
+    }
+  .carousel-indicators {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    z-index: 30;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+    .carousel-indicators > li {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin: 0 2px;
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+      color: transparent;
+      font-size: 0;
+      line-height: 0;
+      vertical-align: middle;
+      opacity: 0.4;
+    }
+    .carousel-indicators > .active {
+      opacity: 0.8;
+    }
+.carousel.vertical {
+  height: 100%;
+}
+  .carousel.vertical .carousel-inner {
+    white-space: normal;
+    height: 100%;
+  }
+    .carousel.vertical .item {
+      width: auto;
+      height: 100%;
+    }
+  .vertical .carousel-indicators {
+    top: 50%;
+    right: 12px;
+    bottom: auto;
+    left: auto;
+    width: 10px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }

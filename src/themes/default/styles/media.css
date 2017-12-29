@@ -1,0 +1,22 @@
+/**
+ * =============================================================================
+ *  Media
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.media,
+.media-body {
+  overflow: hidden;
+}
+  .media > .pull-left {
+    margin-right: 10px;
+  }
+  .media > .pull-right {
+    margin-left: 10px;
+  }
+  .media-object {
+    display: block;
+    max-height: 100%;
+  }

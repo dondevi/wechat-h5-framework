@@ -1,0 +1,144 @@
+/**
+ * @overview CSS UI 库
+ *
+ * =============================================================================
+ *  组件样式
+ * =============================================================================
+ *
+ *  说明: 参考 Bootstrap3
+ *
+ * =============================================================================
+ *
+ * @author dondevi
+ * @create 2014-08-14
+ *
+ * @update 2015-01-30 dondevi
+ * @update 2015-07-13 dondevi
+ *   1.分离组件
+ *
+ */
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.hide {
+  display: none !important;
+}
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.justifyfix {
+  text-align: justify;
+  font-size: 0 !important;
+}
+  .justifyfix:after {
+    content: "";
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+  }
+  .justifyfix-item {
+    display: inline-block;
+    font-size: initial !important;
+    vertical-align: middle;
+  }
+.col-xs-6 {
+  display: inline-block;
+  margin: 0 -0.31em 0 0 !important;
+  width: 50%;
+  vertical-align: middle;
+}
+.list-unstyled {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ * icon
+ * -----------------------------------------------------------------------------
+ */
+.img,
+.img-sib,
+.icon,
+.icon-sib,
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon {
+  margin-right: 3px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+
+.unselect {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+
+
+
+
+/**
+ * -----------------------------------------------------------------------------
+ * Flex box
+ * -----------------------------------------------------------------------------
+ */
+.flex {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content: center;
+}
+.flex-column { flex-direction: column; }
+.flex-wrap   { flex-wrap: wrap; }
+  .flex-item {
+    flex-grow: 1;
+  }

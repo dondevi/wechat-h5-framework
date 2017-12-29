@@ -1,0 +1,230 @@
+
+/**
+ * -----------------------------------------------------------------------------
+ *  列表-表单
+ * -----------------------------------------------------------------------------
+ */
+.list-item label.label,
+.list-item > .placeholder {
+  white-space: nowrap;
+  padding-left: 1px;
+  cursor: pointer;
+}
+.list-item > .placeholder {
+  color: #888;
+}
+.list-item.empty > .placeholder ~ *,
+.list-item > .placeholder {
+  display: none !important;
+}
+.list-item.select {
+  padding-right: 45px;
+}
+.list-item.select > *,
+.list-item > .placeholder {
+  pointer-events: none;
+}
+.list-item.empty > .placeholder {
+  display: inline-block !important;
+}
+.list-item .label {
+  color: #555;
+  white-space: nowrap;
+}
+
+.list-item label.label,
+.list-item .form-control {
+  display: table-cell;
+  vertical-align: middle;
+  height: 42px;
+}
+.list-item .form-control {
+  min-width: 40px;
+  min-height: 20px;
+  padding: 10px 0 10px 15px;
+  background-color: #fff;
+  border: none;
+  background: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.list-item .label + .form-control,
+.list-item .label + .form-control input {
+  text-align: right;
+}
+.list-item .label + select.form-control {
+  direction: rtl;
+}
+.text-left .list-item .label + .form-control,
+.text-left .list-item .label + .form-control input {
+  text-align: left;
+}
+.text-left .list-item .label + select.form-control {
+  direction: ltr;
+}
+.list-item.input .form-control {
+  padding: 10px 15px;
+}
+.list-item .form-control + .form-control {
+  min-width: 0;
+  width: 1px;
+  padding: 0 10px 0 0;
+}
+
+
+.list-item.input {
+  padding-right: 15px;
+}
+.list-item.radio,
+.list-item.checkbox {
+  padding-right: 60px;
+}
+.list-item.radio label.label,
+.list-item.checkbox label.label {
+  padding: 12px 0;
+  line-height: 1.2;
+  white-space: normal;
+}
+.list-item.radio-front,
+.list-item.checkbox-front {
+  padding-right: 50px;
+  margin-left: 40px;
+}
+  .list-arrow:after,
+  .list-item.select:after,
+  .list-item.radio:after,
+  .list-item.checkbox:after {
+    content: "";
+    clear: both;
+    display: inline-block;
+  }
+  .list-item.select.readonly {
+    pointer-events: none;
+  }
+  .list-item.select.readonly:after {
+    display: none;
+  }
+  .list-arrow,
+  .list-item.select:after,
+  .list-item.radio:after,
+  .list-item.checkbox:after {
+    position: absolute;
+    top: 53%;
+    right: 30px;
+    z-index: 10;
+    margin: 0;
+    color: inherit;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .list-item.radio-front:after,
+  .list-item.checkbox-front:after {
+    left: -30px;
+    right: auto;
+  }
+  .list-arrow:after,
+  .list-item.select:after {
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .list-item.select:after {
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+  }
+  .list-item.radio:after,
+  .list-item.checkbox:after {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px #c3c3c3;
+  }
+    .list-item.radio.active:after {
+      background-color: #4384d5;
+      box-shadow: 0 0 0 1px #4384d5;
+    }
+    .list-item.checkbox:after {
+      content: "√";
+      padding: 6px;
+      border: none;
+      font: bold 13px/0.8 YouYuan, "Microsoft Yahei", Cochin, Courier, Georgia;
+      text-align: center;
+      text-indent: -2px;
+      vertical-align: middle;
+    }
+    .list-item.checkbox.active:after {
+      background-color: #ff5654;
+      box-shadow: 0 0 0 1px #ff5654;
+      color: #fff;
+    }
+.list-item.textarea .label {
+  display: block;
+}
+.list-item.textarea textarea {
+  line-height: normal;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+
+.list-item-box {
+  display: table-cell;
+  width: 100%;
+  padding: 5px 0 5px 10px;
+  letter-spacing: -.31em;
+  font-size: 14px;
+  line-height: normal;
+  color: inherit;
+}
+.list-item-box .list-item {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 8px 0px;
+  padding-left: 15px;
+  border-bottom: none;
+  color: #888;
+  line-height: normal;
+  text-indent: -15px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+.list-item-box .option:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 2px;
+  border: 4px solid #ddd;
+  background-color: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.list-item-box .list-item.active {
+  color: #4384d5;
+}
+.list-item-box .option.active:before {
+  border-color: #4384d5;
+}
+.list-item-box .option.active:after {
+  display: none !important;
+}
+
+
+
+.list-item.option.active:after {
+  content: "√";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  color: #8fc31f;
+  font: bold 15px/0.8 YouYuan, "Microsoft Yahei", Cochin, Courier, Georgia;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}

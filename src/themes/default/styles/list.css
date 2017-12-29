@@ -1,0 +1,145 @@
+/**
+ * @overview CSS 工具库
+ *
+ * =============================================================================
+ *  List 列表
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ * @update 2016-06-18 dondevi
+ *   1.Feature: select readonly
+ * @update 2016-06-20 dondevi
+ *   1.Feature: option acitve
+ *
+ */
+.list {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+  background-color: #fff;
+  border: none;
+  outline: 1px solid #eaeaea;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+.list:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  /*left: 15px;*/
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+  .list-item {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-left: 15px;
+    padding-left: 1px;
+    padding-right: 30px;
+    color: inherit;
+    line-height: 42px;
+  }
+  .list .list-item {
+    border-bottom: 1px solid #eaeaea;
+    /*margin-top: 1px;
+    margin-bottom: -1px;*/
+  }
+  .list-form .list-item {
+    cursor: pointer;
+  }
+  /*@media
+  only screen and (-webkit-device-pixel-ratio: 2),
+  only screen and (device-pixel-ratio: 2) {
+    .list-item {
+      border-bottom-width: 0.5px;
+    }
+  }*/
+  .list-item:hover {
+    background-color: #fdfdfd;
+  }
+  .list-item:visited {
+    color: inherit;
+  }
+  .list-item:active {
+    color: #888;
+  }
+  .list-item:last-child {
+    border-bottom-color: transparent;
+  }
+    .list-item ~ fieldset {
+      margin-top: -1px;
+    }
+    .list dt {
+      padding: 10px 15px;
+      border-bottom: 1px solid #dfe4e8;
+    }
+    .list h4 {
+      margin: 0;
+      color: #333;
+      font-weight: normal;
+    }
+    .list small {
+      color: #aaa;
+    }
+    .list .pull-right small {
+      color: inherit;
+    }
+    .list h4 small {
+      color: #868e9d;
+    }
+
+/* Has detail */
+.list-item.detail {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: normal;
+}
+  .list-item.detail > label.label {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+  }
+  .list-item.detail > .form-control {
+    display: inline-block;
+    max-width: 55%;
+    width: auto;
+    height: auto;
+    margin: -15px 0;
+    white-space: normal;
+  }
+
+/* Has icon */
+.list-item-icon {
+  margin-left: 45px;
+}
+  .list-item-icon > .icon {
+    margin-left: -30px;
+    color: #888;
+  }
+  .list-item-icon > .icon + .label,
+  .list-item-icon > .icon + .form-control {
+    display: inline-block !important;
+    text-align: left;
+  }
+  .list-item-icon > .icon + .label {
+    margin-left: 12px;
+  }
+  .list-item-icon .list-arrow,
+  .list-item-icon.select:after,
+  .list-item-icon.radio:after,
+  .list-item-icon.checkbox:after {
+    right: 60px !important;
+  }
+
+/* 列表-清单 */
+.list-price .list-item {
+  height: 36px;
+  border-bottom-style: dashed;
+  line-height: 36px;
+}

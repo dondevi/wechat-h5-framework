@@ -1,0 +1,86 @@
+/**
+ * Offvancars - 滑动导航
+ *
+ * @author dondevi
+ * @create 2016-01-08
+ * @version 1.0.1
+ *
+ */
+.offcanvas-wrapper {
+  overflow: hidden;
+}
+.offcanvas-container {
+  position: relative;
+  overflow: visible;
+  -webkit-transition: -webkit-transform 0.167s ease-out;
+          transition:         transform 0.167s ease-out;
+}
+  .offcanvas {
+    position: absolute;
+    top: 0;
+    left: -60%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.2);
+    opacity: 0;
+    -webkit-transition: opacity 0.334s ease-out;
+            transition: opacity 0.334s ease-out;
+  }
+    .offcanvas-panel {
+      overflow-y: auto;
+      height: 100%;
+      width: 37.5%;
+      background-color: #333;
+      box-shadow: 0px 0 10px #333;
+      color: #aaa;
+      touch-action: pan-y;
+      -webkit-overflow-scrolling: touch;
+    }
+      .offcanvas-inner {
+        position: relative;
+        overflow: hidden;
+        min-height: 100%;
+        padding: 20px 0;
+      }
+      .offcanvas-footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        padding: 10px;
+      }
+      .offcanvas .list > .list-item {
+        margin-left: 0;
+        padding-left: 15px;
+        border-bottom-color: inherit;
+      }
+      .offcanvas .list .list-arrow:after,
+      .offcanvas .list .list-item.select:after {
+        right: 15px;
+        border-top: 2px solid;
+        border-right: 2px solid;
+      }
+
+.open-offcanvas {
+  -webkit-transform: translateX(60%);
+      -ms-transform: translateX(60%);
+          transform: translateX(60%);
+}
+  .open-offcanvas .offcanvas {
+    opacity: 1;
+    z-index: 9999;
+  }
+
+.offcanvas .list {
+  background-color: transparent;
+  outline: none;
+}
+  .offcanvas .list:after {
+    display: none;
+  }
+  .offcanvas .list-item {
+    border-color: #555;
+    text-align: left;
+  }

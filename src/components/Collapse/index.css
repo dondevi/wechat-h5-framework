@@ -1,0 +1,16 @@
+/**
+ * =============================================================================
+ *  Collapse 折叠
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.collapse {
+  display: none;
+  visibility: hidden;
+}
+.collapse.in {
+  display: block;
+  visibility: visible;
+}

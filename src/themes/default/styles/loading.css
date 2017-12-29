@@ -1,0 +1,32 @@
+/**
+ * @overview CSS 工具库
+ *
+ * =============================================================================
+ *  Loading 页面加载状态
+ * =============================================================================
+ *
+ * @author dondevi
+ *
+ */
+.loading {
+  position: relative;
+  /*cursor: wait;*/
+}
+  .loading:after {
+    content: "";
+    position: absolute;
+    /*position: fixed;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+    display: block;
+    background: rgba(255,255,255,.5) url(../images/loading.gif) center no-repeat;
+    background-size: 36px;
+  }
+
+.bg-loading {
+  background: url(../images/loading.gif) center no-repeat;
+  background-size: 24px;
+}

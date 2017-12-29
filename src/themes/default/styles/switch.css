@@ -1,0 +1,137 @@
+/**
+ * =============================================================================
+ *  Switch 开关
+ * =============================================================================
+
+ * @author dondevi
+ * @create 2015-08-19
+ *
+ * @update 2015-08-20
+ */
+.switch {
+  width: 55px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.switch > input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.switch > .switch-handler {
+  display: block;
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 3;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  -webkit-transition: left 0.167s ease;
+          transition: left 0.167s ease;
+}
+  .switch > .switch-handler:hover {
+    width: 34px;
+  }
+  .switch > input:checked + .switch-handler {
+    left: 25px;
+  }
+.switch > .switch-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  height: 30px;
+  width: 54px;
+  background-color: #ccc;
+  border-radius: 15px;
+  pointer-events: none;
+  -webkit-transition: background-color 0.167s ease;
+          transition: background-color 0.167s ease;
+}
+.switch > input:checked + .switch-handler + .switch-bg {
+  background-color: #4fd065;
+}
+  .switch > .switch-bg:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 2;
+    display: block;
+    height: 28px;
+    width: 52px;
+    background-color: #fff;
+    border-radius: 14px;
+    -webkit-transition: all 0.167s ease;
+            transition: all 0.167s ease;
+  }
+  .switch > input:checked ~ .switch-bg:after {
+    height: 0;
+    width: 0;
+    left: 50%;
+    top: 50%;
+  }
+
+/*.weui_switch {
+  position: relative;
+  box-sizing: border-box;
+  width: 52px;
+  height: 32px;
+  background: #dfdfdf;
+  border: 1px solid #dfdfdf;
+  border-radius: 16px;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+  .weui_switch:before,
+  .weui_switch:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-transition: -webkit-transform .3s;
+            transition: -webkit-transform .3s;
+            transition: transform .3s;
+            transition: transform .3s, -webkit-transform .3s;
+  }
+  .weui_switch:before {
+    width: 50px;
+    background-color: #fdfdfd;
+  }
+  .weui_switch:after {
+    width: 30px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+  }
+.weui_switch:checked {
+  border-color: #04be02;
+  background-color: #04be02;
+}
+  .weui_switch:checked:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  .weui_switch:checked:after {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }*/

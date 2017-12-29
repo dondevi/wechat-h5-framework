@@ -1,0 +1,30 @@
+/**
+ * @overview CSS 工具库
+ *
+ * =============================================================================
+ *  Alert 警告框
+ * =============================================================================
+ *
+ * @author dondevi
+ * @create 2015-10-14
+ *
+ */
+
+#modal-alert .modal-body,
+#modal-confirm .modal-body {
+  padding: 25px 15px;
+}
+  #modal-alert .modal-body > p,
+  #modal-confirm .modal-body > p {
+    display: inline-block;
+  }
+#modal-alert .modal-footer,
+#modal-confirm .modal-footer {
+  padding: 0 15px 15px;
+  background: none;
+  border: none;
+}
+  #modal-alert .modal-footer .btn,
+  #modal-confirm .modal-footer .btn {
+    margin: auto;
+  }
