@@ -1,12 +1,16 @@
----
-    title: XFH5
-    author: dondevi
-    create: 2016-09-08
-    update: 2017-05-24
----
+<!--
+/**
+ * @author dondevi
+ * @create 2016-09-08
+ * @update 2017-05-24
+ */
+-->
 
 # XFH5
 > **X**ing**F**u Network **H**TML**5** Framework
+
+## Documentation
+> <https://dondevi.github.io/wechat-h5-framework/docs/index.html>
 
 
 ## Development
