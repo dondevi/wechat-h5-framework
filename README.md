@@ -13,15 +13,7 @@
 > <https://dondevi.github.io/wechat-h5-framework/docs/index.html>
 
 
-## Development
-> Run Local Server: http://localhost:8000
-
-```shell
-  npm run dev
-```
-
-
-## Production
+## Make Production
 > Build `/src` to `/dist`
 
 ```
